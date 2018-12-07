@@ -9,7 +9,7 @@ use [roswell](https://github.com/roswell/roswell)
 ros install shakascchen/simple-jsonrpc-client
 ``` 
 
-## Usage
+## Sample Usage
 ```lisp
 CL-USER> (simple-jsonrpc-client:call "http://127.0.0.1:3030" 
                                      :|method| "sum"
