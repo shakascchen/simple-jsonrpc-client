@@ -2,15 +2,18 @@
 
 ## Introduction
 A simple jsonrpc client on http protocol in Common Lisp.
-
 ## Installation
 use [roswell](https://github.com/roswell/roswell)
 ```
 ros install shakascchen/simple-jsonrpc-client
 ``` 
-
+so we can quickload it
+```lisp
+CL-USER> (ql:quickload :simple-jsonrpc-cliet)
+```
 ## Sample Usage
 ```lisp
+
 CL-USER> (simple-jsonrpc-client:call "http://127.0.0.1:3030" 
                                      :|method| "sum"
                                      :|params| '(5 8))
