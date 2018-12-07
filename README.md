@@ -10,7 +10,7 @@ ros install shakascchen/simple-jsonrpc-client
 ``` 
 
 ## Usage
-``` Common Lisp
+```lisp
 CL-USER> (simple-jsonrpc-client:call "http://127.0.0.1:3030" 
                                      :|method| "sum"
                                      :|params| '(5 8))
